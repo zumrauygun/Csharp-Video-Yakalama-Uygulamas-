@@ -4,7 +4,7 @@ Bu C# kodu, video yakalama işlemleri için bir form uygulaması oluşturmayı a
 
 ## Adım1: Gerekli İsim Alanlarını Tanımlanması
 
-![](C:\Users\PC\Desktop\C# Video Yakalama Uygulaması\image\Ekran Görüntüsü (211).png)
+![](image/Ekran Görüntüsü (211).png)
 
 Bu kütüphane ve ad alanlarının kullanımı, video yakalama işlemlerini gerçekleştirmek ve görüntüleri işlemek için sağlanan sınıfları ve işlevleri kullanmamıza olanak sağlar.
 
