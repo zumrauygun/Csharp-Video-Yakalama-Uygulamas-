@@ -4,13 +4,13 @@ Bu C# kodu, video yakalama işlemleri için bir form uygulaması oluşturmayı a
 
 ## Adım1: Gerekli İsim Alanlarını Tanımlanması
 
-![örnek](Csharp-Video-Yakalama-Uygulamas-/image/Ekran Görüntüsü (211).png)
+<img src="image\Ekran Görüntüsü (211).png" style="zoom:80%;" />
 
 Bu kütüphane ve ad alanlarının kullanımı, video yakalama işlemlerini gerçekleştirmek ve görüntüleri işlemek için sağlanan sınıfları ve işlevleri kullanmamıza olanak sağlar.
 
 ## Adım 2: Form Sınıfının Tanımlanması
 
-![](C:\Users\PC\Desktop\C# Video Yakalama Uygulaması\image\Ekran Görüntüsü (218).png)
+<img src="image\Ekran Görüntüsü (218).png" style="zoom:80%;" />
 
 - **`public partial class Form1 : Form`** satırı, `Form1` adında bir sınıfın tanımlandığını ifade eder. Bu sınıf, `Form` sınıfından türetilmiştir ve `partial` anahtar kelimesiyle işaretlenmiştir.
 
@@ -28,7 +28,7 @@ Bu kütüphane ve ad alanlarının kullanımı, video yakalama işlemlerini ger�
 
 ## Adım 3: Form Yapıcısı ve Başlangıç Ayarları
 
-![](C:\Users\PC\Desktop\C# Video Yakalama Uygulaması\image\Ekran Görüntüsü (213).png)
+<img src="image\Ekran Görüntüsü (213).png" style="zoom:80%;" />
 
 - **`public Form1()` **metodu, `Form1` adlı sınıfa ait bir yapıcı metodun tanımını içerir. Bir sınıfın yapıcı metodu, sınıfın bir örneği oluşturulduğunda çağrılan ilk metodudur. Bu durumda `Form1` sınıfının bir örneği oluşturulduğunda `Form1()` yapıcı metodu otomatik olarak çalışır.
 - **`InitializeComponent()`** metodu, Visual Studio tarafından otomatik olarak oluşturulan bir metottur ve Windows Forms uygulamalarında formun bileşenlerini (kontrolleri) oluşturur ve özelliklerini ayarlar. Bu metot, formun tasarımını yükler ve içerisinde yer alan kontrolleri hazır hale getirir.
@@ -41,7 +41,7 @@ Bu kütüphane ve ad alanlarının kullanımı, video yakalama işlemlerini ger�
 
 ## Adım 4: Yeni Kare Olay İşleyicisi
 
-<img src="C:\Users\PC\Desktop\C# Video Yakalama Uygulaması\image\Ekran Görüntüsü (214).png" style="zoom:80%;" />
+<img s<img src="image\Ekran Görüntüsü (214).png" style="zoom:80%;" />
 
 - **`private void video_NewFrame(object sender, NewFrameEventArgs eventArgs) `** satırı; bir olay işleyicisi (`event handler`) tanımlar. Özel olarak, `video_NewFrame` adında bir olay işleyicisidir. Bu olay işleyicisi, video yakalama cihazından her yeni kare (frame) alındığında tetiklenir.
 
@@ -80,7 +80,7 @@ Bu kütüphane ve ad alanlarının kullanımı, video yakalama işlemlerini ger�
 
 ## Adım 5: Kamera Değişikliği Olay İşleyicisi
 
-<img src="C:\Users\PC\Desktop\C# Video Yakalama Uygulaması\image\Ekran Görüntüsü (216).png" style="zoom:80%;" />
+<img src="image\Ekran Görüntüsü (216).png" style="zoom:80%;" />
 
 - `toolStripComboBox1` adlı bir araç çubuğu (tool strip) öğesinin `SelectedIndexChanged` olayının tetiklenmesi durumunda çalışacak olan bir olay işleyicisini tanımlar.
 
@@ -97,7 +97,7 @@ Bu kütüphane ve ad alanlarının kullanımı, video yakalama işlemlerini ger�
 
 ## Adım 6: Kamera Başlatma Metodu
 
-<img src="C:\Users\PC\Desktop\C# Video Yakalama Uygulaması\image\Ekran Görüntüsü (217).png" style="zoom:80%;" />
+<img src="image\Ekran Görüntüsü (217).png" style="zoom:80%;" />
 
 - İlk olarak, `try` bloğu içinde işlemler gerçekleştirilir.
 - **`videoCapture = new VideoCaptureDevice(filterInfo[toolStripComboBox1.SelectedIndex].MonikerString);` **satırı; `filterInfo` koleksiyonundan seçilen bir video cihazını temsil eden `VideoCaptureDevice` nesnesini oluşturur. İşlevi şu şekildedir:
